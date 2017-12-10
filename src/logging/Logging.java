@@ -33,7 +33,7 @@ public class Logging {
      */
     public static void error(String message){
         Logging.date = new Date();
-        String string = "[" + Logging.dateFormat.format(Logging.date) + "] - INFO: " + message;
+        String string = "[" + Logging.dateFormat.format(Logging.date) + "] - ERROR: " + message;
         if(isLoggingConsole()) System.out.println(string);
         if(isLoggingFile()) Logging.logToFile(string);
     }
@@ -55,7 +55,7 @@ public class Logging {
      */
     public static void info(String message){
         Logging.date = new Date();
-        String string = "[" + Logging.dateFormat.format(Logging.date) + "] - ERROR: " + message;
+        String string = "[" + Logging.dateFormat.format(Logging.date) + "] - INFO: " + message;
         if(isLoggingConsole()) System.out.println(string);
         if(isLoggingFile()) Logging.logToFile(string);
     }
