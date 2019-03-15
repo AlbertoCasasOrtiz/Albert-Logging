@@ -102,7 +102,7 @@ public class Logging {
 
     /**
      * Log information into a file.
-     * @param message Logging message.
+     * @param message logging.Logging message.
      */
     private static void logToFile(String message){
         Writer output;
